@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+.topHeader {
+    padding: 8px;
+}
+
+.top-right ul li {
+    list-style-type: none;
+    margin-left: 8px;
+}
+
+.top-right ul li a {
+    text-decoration: none;
+    margin-top: 7px;
+}
+
+.secondHeader>div>ul>li {
+    list-style-type: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+.carousel-item {
+    height: 20rem !important;
+}
+/* For Add To Cart button On Product  */
+.addToCartOnCards{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: -100%;
+    transition: all 0.2s ease-in-out;
+}
+.productCards:hover{
+    cursor: pointer;
+}
+.card:hover .addToCartOnCards{
+    margin-bottom: 0px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+/* Add to Increment & Decrement Cart Css  */
+.decrement,.increment{
+    cursor: pointer;
+}
+.img-div{
+    overflow: hidden;
+}
+.card-img-top{
+    transition: all ease 0.6s;
+}
+.card-img-top:hover{
+    scale: 1.2;
+}
+/* Alert Message Css  */
+.myalert{
+    min-width: 30%;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    animation: slide_alert 1.5s ease forwards;
+}
+.alert-success{
+    border-left: 8px solid yellowgreen;
+}
+.alert-danger{
+    border-left: 8px solid rgb(164, 27, 9);
+}
+
+
+@keyframes slide_alert {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+@media screen and (max-width:770px){
+    .addToCartOnCards{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .nav-toggle-mobile-view {
+        display: block !important;
+    }
+    .header-2{
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+        z-index:100;
+    }
+    .carousel{
+        margin-top: 105px;
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-bar-mobile-view{
+        display: block !important;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .login,.registration,.change_password{
+        margin-top: 105px !important;
+        
+    }
+}
